@@ -14,6 +14,18 @@ const btn = {
     userSelect: 'none'
 }
 
+const hidden = {
+    visibility: 'hidden'
+}
+
+const prev = {
+    ...btn,
+    textAlign: 'left'
+}
+const next = {
+    ...btn,
+    textAlign: 'right'
+}
 
 export default {
     root: {
@@ -23,6 +35,14 @@ export default {
         width: '100%',
         display: 'flex'
     },
-    prev: {},
-    next: {},
+    prev,
+    prevHidden : {
+        ...prev,
+        ...hidden,
+    },
+    next,
+    nextHidden : {
+        ...next,
+        ...hidden,
+    }
 }
